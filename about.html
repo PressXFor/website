@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+  <link href="about.css" rel="stylesheet" type="text/css" />
+  <title>Doggos Galore</title>
+  <style></style>
+</head>
+
+<body>
+  <form action="https://random.dog/" class="w-form">
+    <input type="Submit" class="w-button" value="Search" />
+    <input
+      class="w-input"
+      maxlength="256"
+      name="query"
+      placeholder="Bring more pups"
+      type="search"
+      id="search"
+      required=""
+      value=""
+    />
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </form>
+  <header>
+    <h1 class="top-container"><em>About Us</em></h1>
+    <h2 class="header" id="myHeader">
+      Doggos Galore
+    </h2>
+  </header>
+
+  <div>
+    <h1 class="about">
+      Here at Doggos Galore, we take pride in our showcase of internet dogs.<br />
+      From the smallest yapper to the largest floofer, we have it all.
+    </h1>
+  </div>
+
+  <script>
+    window.onscroll = function() {
+      myFunction();
+    };
+
+    var header = document.getElementById('myHeader');
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    }
+  </script>
+</body>
